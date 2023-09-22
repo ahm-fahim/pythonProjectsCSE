@@ -49,7 +49,7 @@ file_name_entry = Entry(app)
 file_name_entry.pack()
 
 # Create a button to generate the QR code
-generate_button = Button(app, text="Generate QR Code", command=generate_qr_code)
+generate_button = Button(app,bg="#21ad67",padx=10, pady=5,bd=5,relief=tk.RAISED, text="Generate QR Code", command=generate_qr_code)
 generate_button.pack()
 
 # Create a canvas to display the QR code image
