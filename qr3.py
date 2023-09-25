@@ -3,7 +3,10 @@ import tkinter as tk
 from tkinter import Entry, Button, Label, Canvas
 from PIL import ImageTk
 
+#define function
 def generate_qr_code():
+    
+    # declare variable 
     data = data_entry.get()
     color = color_entry.get()
     file_name = file_name_entry.get()
@@ -33,17 +36,17 @@ app = tk.Tk()
 app.title("QR Code Generator")
 
 # Create input fields and labels
-data_label = Label(app, text="Input for QR code:")
+data_label = Label(app,fg="#21ad67", text="Input for QR code:")
 data_label.pack()
 data_entry = Entry(app)
 data_entry.pack()
 
-color_label = Label(app, text="Color:")
+color_label = Label(app,fg="#21ad67", text="Color:")
 color_label.pack()
 color_entry = Entry(app)
 color_entry.pack()
 
-file_name_label = Label(app, text="File name:")
+file_name_label = Label(app,fg="#21ad67", text="File name:")
 file_name_label.pack()
 file_name_entry = Entry(app)
 file_name_entry.pack()
